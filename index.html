@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form in PHP | Umeid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>Envie-nos uma mensagem</header>
+    <form action="#">
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="name" placeholder="Digite seu nome">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Digite seu email">
+          <i class='fas fa-envelope'></i>
+        </div>
+      </div>
+      <div class="dbl-field">
+        <div class="field">
+          <input type="text" name="phone" placeholder="Digite seu telefone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="website" placeholder="Digite seu website">
+          <i class='fas fa-globe'></i>
+        </div>
+      </div>
+      <div class="message">
+        <textarea placeholder="Escreva sua mensagem" name="message"></textarea>
+        <i class="material-icons">mensagem</i>
+      </div>
+      <div class="button-area">
+        <button type="submit">Enviar mensagem</button>
+        <span></span>
+      </div>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
