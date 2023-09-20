@@ -7,7 +7,7 @@ form.onsubmit = (e)=>{
   statusTxt.style.color = "#0D6EFD";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Enviando sua mensagem...";
-  //form.classList.add("disabled");
+  form.classList.add("disabled");
 
   let xhr = new XMLHttpRequest(); //creating new xml object
   xhr.open("POST", "message.php", true);//sending post request to message.php file
@@ -23,7 +23,7 @@ form.onsubmit = (e)=>{
         }, 3000);
       }
       statusTxt.innerText = response;
-      //form.classList.remove("disabled");
+      form.classList.remove("disabled");
     }
   }
   let formData = new FormData(form);//creating new formData obj. This obj is used to send form data
