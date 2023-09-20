@@ -8,7 +8,7 @@
 
   if(!empty($email) && !empty($message)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "umeid.ijate@gmail.com"; //enter that email address where you want to receive all messages
+      $receiver = "seuemail@gmail.com"; //enter that email address where you want to receive all messages
       $subject = "From: $name <$email>";//subject of the email address, subject looks like from: UmeidiIjate  <abc@gmail.com>
       $body = "Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $website\n\nMessage:\n$message\n\nRegards,\n$name";
       $sender = "From: $email";//sender email
